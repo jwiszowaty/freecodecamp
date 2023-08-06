@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <title>Jakub's first survey</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+    <h1 id="title">English course</h1>
+    <p id="description">Today's topic: student's survey.</p>
+        <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset id="fieldset-1">
+            <label id="name-label" for="name"> First and Last Name<input type="text" id="name" placeholder="Enter your First and Last Name" required /></label>
+            <label id="email-label" for="email">Email address<input type="email" id="email" placeholder="Enter your Email address" required/></label>
+            <label id="number-label" for="number">How old are you?<input type="number" id="number" placeholder="Enter your age" min=16 max=120 required/></label>
+            <label id="name-label" for="native-language"> What is your native language?<input type="text" id="native-language" placeholder="Enter your native language" required/></label>      
+        </fieldset>
+        <fieldset id="fieldset-2">
+            <h3 id="dropdown-label">What is your current English level? </h3>
+                <select id="dropdown">
+                <option value=""> Choose your level
+                </option>
+                <option value="A1"> A1 </option>
+                <option value="A2"> A2 </option>
+                <option value="B1"> B1 </option>
+                <option value="B2"> B2 </option>
+                <option value="C1"> C1 </option>
+                <option value="C2"> C2 </option>
+                </select>
+            <h3>Why are you learning English?</h3>
+            <div class="checkbox-container">
+                <div class="column">
+                    <label id="checkbox" for="business"><input id="business" type="checkbox" name="choose-checkbox" value="business" class="checkbox"/>           Business/Work</label>
+                    <label id="checkbox" for="study"><input id="study" type="checkbox" name="choose-checkbox" value="study" class="checkbox"/>                    Study abroad</label>
+                    <label id="checkbox" for="exam"><input id="exam" type="checkbox" name="choose-checkbox" value="exam" class="checkbox"/>                       Exam </label>
+                </div>
+                <div class="column">
+                    <label id="checkbox" for="move"><input id="move" type="checkbox" name="choose-checkbox" value="move" class="checkbox"/>                       Move abroad </label>
+                    <label id="checkbox" for="travel"><input id="travel" type="checkbox" name="choose-checkbox" value="travel" class="checkbox"/>                 Travel </label>
+                    <label id="checkbox" for="family"><input id="family" type="checkbox" name="choose-checkbox" value="family" class="checkbox"/>                 Friends/Family </label>
+                </div>
+            </div>
+            <h3>What type of lessons are you interested in? </h3>
+            <div class="checkbox-container">
+            <div class="row">
+                <label id="radio" for="group-classes" ><input id="group-classes" type="radio" name="class" value="group-classes" class="inline"/>           group classes</label>
+                </div>
+                <div class="row">
+                <label id="radio" for="private-classes" ><input id="private-classes" type="radio" name="class" value="private-classes" class="inline"/>     private classes</label>
+            </div>
+            </div>
+            <h3>What area of language would you like to focus on? </h3>
+            <div class="checkbox-container">
+                <div class="column">
+                <label id="checkbox" for="speaking"><input id="speaking" type="checkbox" name="choose-checkbox" value="speaking" class="checkbox"/>           Speaking</label>
+                <label id="checkbox" for="reading"><input id="reading" type="checkbox" name="choose-checkbox" value="reading" class="checkbox"/>              Reading</label>
+                </div>
+                <div class="column">
+                <label id="checkbox" for="listening"><input id="listening" type="checkbox" name="choose-checkbox" value="listening" class="checkbox"/>        Listening</label>
+                <label id="checkbox" for="writing"><input id="writing" type="checkbox" name="choose-checkbox" value="writing" class="checkbox"/>              Writing</label>
+                </div>
+                </div>
+            <h3>Do you have any questions? Leave them below:</h3>
+                <textarea rows="3" cols="30" placeholder="Comments"></textarea>
+        </fieldset>
+        <fieldset id="fieldset-3">
+            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" value="terms-accepted"/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a></label>
+            <input id="submit" type="submit" value="Submit" />
+        </fieldset>
+        </form>
+    </body>
+</html>
+
