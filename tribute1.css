@@ -1,1 +1,13 @@
-
+body{
+  max-width: 900px
+}
+.img-div {
+display:flex;
+justify-content:center;
+align-items: center;
+}
+img {
+  display:block;
+  max-height: auto;
+  max-width: 100%;
+}
