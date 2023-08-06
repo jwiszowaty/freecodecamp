@@ -1,0 +1,131 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1614292264554-7dca1d6466d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80");
+  background-size: cover;
+}
+
+label {
+  color: white;
+  font-family: chalkduster, arial;
+  text-shadow: 0 0 20px black;
+}
+
+h1, h2, h3, p {
+  margin: auto;
+  text-align: center; 
+  font-family: Chalkduster, arial;
+  color:white;
+}
+
+#radio, #checkbox {
+  color: #F9F894;
+  text-shadow: 0 0 20px black;
+}
+
+::placeholder {
+  color: #9ebf87;
+  font-family: Chalkduster;
+}
+
+input, select, textarea {
+  background: linear-gradient(
+    -60deg,
+    #385723 0%,
+    #548235 25%,
+    #548235 75%,
+    #385723 100%);
+  border: black solid 1px;
+  color: white;
+  text-align: left;
+}
+.checkbox-container {
+  display:flex;
+}
+
+.column {
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  width:200px;
+}
+.row {
+   flex:1;
+  display:flex;
+  flex-direction: column;
+  width:200px;
+}
+form {
+  width: 600px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  background: none;
+}
+
+#fieldset-1 {
+            display:flex;
+            flex-direction: column;
+            width:400px;
+            margin: 1em auto 0 auto;
+            border: none;
+            }
+
+            #fieldset-1 input, textarea, select {
+            margin: 0.5rem 0;
+            width: 400px;
+            min-height: 2.5em;
+            }
+
+#fieldset-2 {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            width:600px;
+            margin: 0 auto;
+            border: none;
+            }
+
+            #fieldset-2 h3 {
+            margin: 1.5rem 0 1.5rem 0;
+            }
+            #fieldset-2 select {
+            width:200px;
+            }
+            #fieldset-2 textarea {
+            width:400px;
+            }
+            #fieldset-2 .inline {
+              vertical-align: middle;
+            }
+            #fieldset-2 input[class="inline"]{
+              display: inline-block;
+              width:20px;
+            }
+
+
+#fieldset-3 {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            width:500px;
+            margin: 0 auto;
+            border: none;
+            }
+
+            input[type="submit"]{
+            font-size: 26px;
+            background: #940000;
+            color: #a6a6a6;
+            width: 200px;
+            text-align: center;
+            margin:1rem 0
+            }
+
+            input[type="submit"]:hover{
+            background: radial-gradient(
+                        #CB1900 0%,
+                        #940000 65%);
+            color: #F9F894;
+            }
+
+            a {
+            color: white;
+            }
